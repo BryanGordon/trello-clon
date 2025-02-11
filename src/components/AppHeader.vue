@@ -1,11 +1,13 @@
 <script setup>
-  // Crear todo el contenido de vue router 
-  // (configuracion y declaracion en componentes, Hacer primero esto antes de seguir programando)
+import { RouterLink } from 'vue-router'
+
+
 </script>
 
 <template>
   <header>
     <h1 class="title">Vue Trello</h1>
+    <RouterLink class="btn-header" to="/">Mis paneles</RouterLink>
   </header>
 </template>
 
@@ -28,6 +30,8 @@
     }
   }
 
+  
+
   .btn-header {
     background-color: #455a64;
     border: none;
@@ -36,9 +40,11 @@
       0 2px 5px 0 rgba(49, 49, 93, .1),
       0 1px 2px rgba(0, 0, 0, .08)
     ;
+    align-content: center;
     color: #b0bec5;
     cursor: pointer;
     text-decoration: none;
+    text-align: center;
     padding: 0.5rem;
     margin: 0 0.5rem;
   }
