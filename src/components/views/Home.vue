@@ -34,6 +34,7 @@ const add = () => {
         v-for="(board, index) in boards"
         :key = "index"
         :name = "board.name"
+        :id = "board.id"
       >
 
       </BoardCard>
